@@ -1,0 +1,38 @@
+<?xml version ="1.0" encoding ="utf-8"?><!--  Learn More about how to use App Actions: https://developer.android.com/guide/actions/index.html -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/button">
+    <!--for main page-->
+    <TextView
+    android:id="@+id/text1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="50dp"
+    android:text="STUDY DOUMI"    />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="50dp"
+        android:text="2018202082\n문지은"  />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:id="@+id/emailTv"
+        android:layout_width="match_parent"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/pwdTv"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center" />
+</LinearLayout>

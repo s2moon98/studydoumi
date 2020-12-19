@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChoiceActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="228dp">
+        <!--for choosing page-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button"
+            android:gravity="center"
+            android:padding="30dp"
+            android:text="Choose option"
+            android:textColor="#ffffff"
+            android:textSize="30sp" />
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="472dp"
+            android:columnCount="2"
+            android:rowCount="4">
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="151dp"
+                android:layout_height="149dp"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:src="@drawable/todolist" />
+
+            <Button
+                android:id="@+id/todolist_button"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:layout_margin="10dp"
+                android:background="@drawable/cancelbutton"
+                android:gravity="center"
+                android:text="TO DO LIST"
+                android:textColor="#ffffff" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="148dp"
+                android:layout_height="144dp"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:src="@drawable/timer" />
+
+            <Button
+                android:id="@+id/studytime_button"
+                android:layout_width="109dp"
+                android:layout_height="wrap_content"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:layout_gravity="center"
+                android:background="@drawable/cancelbutton"
+                android:text="공부 시간 측정"
+                android:textColor="#ffffff" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="143dp"
+                android:layout_height="166dp"
+                android:layout_row="2"
+                android:layout_columnSpan="2"
+                android:layout_gravity="center"
+                android:src="@drawable/community" />
+
+            <Button
+                android:id="@+id/community_button"
+                android:layout_width="102dp"
+                android:layout_height="wrap_content"
+                android:layout_row="3"
+                android:layout_columnSpan="2"
+                android:layout_gravity="center"
+                android:background="@drawable/cancelbutton"
+                android:text="커뮤니티"
+                android:textColor="#ffffff" />
+
+        </GridLayout>
+    </LinearLayout>
+    >
+</androidx.constraintlayout.widget.ConstraintLayout>
